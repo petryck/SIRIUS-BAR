@@ -9,6 +9,10 @@ const url = `${server}/update/${process.platform}/${app.getVersion()}`
 
 autoUpdater.setFeedURL({ url })
 
+
+setTimeout(() => {
+  autoUpdater.checkForUpdates()
+}, 5000);
 setInterval(() => {
   autoUpdater.checkForUpdates()
 }, 60000)
