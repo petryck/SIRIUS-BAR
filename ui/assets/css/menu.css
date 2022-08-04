@@ -1,0 +1,41 @@
+body{
+    /* background: white; */
+}
+.container_menu {
+    /* background: url('./assets/img/wallpapper.jpg');
+    background-size: cover; */
+    position: absolute;
+    display: block;
+    min-width: 16rem;
+    width: max-content;
+    padding: 0.5rem;
+    position: relative;
+    user-select: none;
+    background: hsl(250deg 14% 8% / 53%);
+    /* background-color: hsla(240,3%,11%,.3); */
+    backdrop-filter: blur(25px);
+    border-radius: 0.5rem;
+    box-shadow: rgb(0 0 0 / 30%) 0 0 11px 0, inset 0 0 0 0.9px hsl(0deg 0% 100% / 30%), 0 0 0 1.2px hsl(240deg 3% 11% / 30%);
+}
+
+.container_menu button {
+    --alpha: 1;
+    text-decoration: none; 
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.2rem 0.4rem;
+    font-weight: 600!important;
+    margin: 0.1rem;
+    letter-spacing: .4px;
+    font-size: 13px!important;
+    border-radius: 0.3rem;
+    transition: none;
+    color: hsla(240, 24%, 100%,var(--alpha));
+    background: transparent;
+    cursor: pointer;
+}
+.container_menu button:hover {
+    background-color: #0a85ff;
+}

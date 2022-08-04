@@ -1,0 +1,22 @@
+{
+  "name": "sirius-bar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "srv/index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^20.0.0"
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1",
+    "path": "^0.12.7",
+    "promise-mysql": "^5.2.0",
+    "querystring": "^0.2.1",
+    "update-electron-app": "^2.0.1"
+  }
+}

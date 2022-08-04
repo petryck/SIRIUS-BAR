@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ui/assets/css/menu.css">
+    <title>Document</title>
+</head>
+<body >
+ 
+
+   <div class="container_menu">
+    <!-- <button onclick="open_app('1', 'Visitantes', '65%', '70%')">Controle Visitantes</button>
+    <button onclick="open_app('6', 'Portal RH', '65%', '70%')">Recursos Humanos</button>
+    <button onclick="open_app('6', 'Visitantes', '65%', '70%')">Marketing</button> -->
+   </div>
+
+   <script src="../assets/js/libs/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+   <script>
+const { ipcRenderer } = require("electron");
+// const querystring = require('querystring');
+
+    $(document).on('mouseleave', '.container_menu', function(e){
+        console.log(e.originalEvent.clientX)
+        var x = e.originalEvent.clientX
+        var y = e.originalEvent.clientY
+        ipcRenderer.send(`display-app-menu_close`, { x, y });
+    })
+
+  
+    // $(window).blur(function(){
+    //     ipcRenderer.send(`display-app-menu_close`, { x, y });
+    // });
+    
+// let query = querystring.parse(global.location.search);
+// console.log(global.id)
+// console.log(global)
+// let data = JSON.parse(query['?data'])
+
+
+
+
+
+   </script>
+</body>
+</html>
