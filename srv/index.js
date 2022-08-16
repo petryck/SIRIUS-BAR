@@ -2,6 +2,8 @@ const { app,BrowserWindow, Notification, ipcMain, autoUpdater, dialog } = requir
 const path = require("path");
 const { setTimeout } = require("timers/promises");
 const { modulos } = require("./query/consultas");
+
+if(require('electron-squirrel-startup')) app.quit();
 // require('update-electron-app')()
 
 const server = 'https://sirius-bar-e4or.vercel.app/'
